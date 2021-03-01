@@ -156,6 +156,10 @@ Subimos un tag
 ```
 ## GIT LOG
 
+Muestra que cambios hubo en un archivo
+```ssh
+	git show <archivo>
+```
 Muestra los logs de los commits
 ```ssh
 	git log <archivo>
