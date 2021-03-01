@@ -103,6 +103,7 @@ Podemos crear todas las ramas y commits que queramos. De hecho, podemos aprovech
 
 Solo ten en cuenta que combinar estas ramas (sí, hacer “merge”) puede generar conflictos. Algunos archivos pueden ser diferentes en ambas ramas. Git es muy inteligente y puede intentar unir estos cambios automáticamente, pero no siempre funciona. En algunos casos, somos nosotros los que debemos resolver estos conflictos “a mano”.
 
+
 ## GIT CLONE
 
 Clonamos el repositorio de github o bitbucket
