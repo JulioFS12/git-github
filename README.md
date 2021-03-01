@@ -84,6 +84,9 @@ Origin es simplemente el nombre predeterminado que recibe el repositorio remoto 
 ### Head
 Se refiere al commit en el que está tu repositorio posicionado en cada momento. Por regla general HEAD suele coincidir con el último commit de la rama en la que estés, ya que habitualmente estás trabajando en lo último. Pero si te mueves hacia cualquier otro commit anterior entonces el HEAD estará más atrás.
 
+### Log
+El comando que podemos usar para ver el histórico de commits, estando situados en la carpeta de nuestro proyecto.
+
 ## GIT CLONE
 
 Clonamos el repositorio de github o bitbucket
@@ -155,7 +158,7 @@ Subimos un tag
 
 Muestra los logs de los commits
 ```ssh
-	git log
+	git log <archivo>
 ```
 Muestras los cambios en los commits
 ```ssh
@@ -169,11 +172,17 @@ Muestra graficos de los commits
 
 Muestra los cambios realizados a un archivo
 ```ssh
-	git diff
+	git diff <archivoId>
 	git diff --staged
 ```
-## GIT HEAD
+Muestra las diferencias en dos archivos
+```ssh
+	git diff <commitAid> <commitBid>
+```
 
+![clase apointment](https://static.platzi.com/media/user_upload/Analizar%20cambios%20en%20los%20archivos%20de%20tu%20proyecto%20con%20Git-f6f2fe08-e2e9-46ef-86fa-6180354bc151.jpg)
+
+## GIT HEAD
 Saca un archivo del commit
 ```ssh
 	git reset HEAD <archivo>
