@@ -65,6 +65,8 @@ Cuando hay una modificación en algún archivo el estado modified nos indica que
 
 El estado staged nos indica que se han puesto en cola uno o varios archivos modificados, en su versión actual, para que se incluyan en el próximo commit y poder ser guardados definitivamente en la línea temporal de nuestra base de datos de Git.
 
+![Status git](https://static.platzi.com/media/user_upload/estados-git-0acb84f7-5080-4098-99d9-59012a3b8e86.jpg)
+
 ### Ramas en git
 
 Cuando hablamos de ramificaciones, significa que tú has tomado la rama principal de desarrollo (master) y a partir de ahí has continuado trabajando sin seguir la rama principal de desarrollo. En muchos sistemas de control de versiones este proceso es costoso, pues a menudo requiere crear una nueva copia del código, lo cual puede tomar mucho tiempo cuando se trata de proyectos grandes.
