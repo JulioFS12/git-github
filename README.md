@@ -254,7 +254,7 @@ Mantiene allí los archivos del área de staging para que podamos aplicar nuestr
 ```ssh
 git reset <id> --soft
 ```
-![rm and reset](https://static.platzi.com/media/user_upload/73119254_802372936847989_5797753898781376512_n-ebbdbd91-bb68-4ef7-acd5-a7715a20ac39.jpg)
+![rm and reset](https://static.platzi.com/media/user_upload/Presentaci%C3%B3n%20sin%20t%C3%ADtulo%20%281%29-273bafef-16e4-4076-892c-1e10d3409c94.jpg)
 Devuelve el ultimo commit que se hizo y pone los cambios en el estado anterior.
 ```ssh
 	git reset --soft HEAD^
