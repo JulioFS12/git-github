@@ -236,7 +236,8 @@ Nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial,
 ```ssh
 	git commit
 ```
-Eliminar archivos o regresarlos a Untracked
+Eliminar archivos o regresarlos a Untracked:
+Este comando nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones. Esto quiere decir que si necesitamos recuperar el archivo solo debemos “viajar en el tiempo” y recuperar el último commit antes de borrar el archivo en cuestión.
 ```ssh
 	git rm: este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
 	- git rm --cached: Mueve los archivos que le indiquemos al estado Untracked.
@@ -246,7 +247,7 @@ Podemos volver a cualquier versión anterior de un archivo específico o incluso
 ```ssh 
 git checkout + ID 
 ```
-Borra toda la información que tengamos en el área de staging (y perdiendo todo para siempre)
+Borra toda la información que tengamos en el área de staging (y perdiendo todo para siempre. Este comando nos ayuda a volver en el tiempo. Pero no como git checkout que nos deja ir, mirar, pasear y volver. Con git reset volvemos al pasado sin la posibilidad de volver al futuro. Borramos la historia y la debemos sobreescribir. No hay vuelta atrás.
 ```ssh
 git reset <id> --hard
 ```
