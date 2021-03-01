@@ -1,4 +1,5 @@
-# git-github
+# Git and Github Course
+![banner](https://miro.medium.com/max/700/1*Jl2VDHVzFBDdXggRprziUg.png)
 
 ### Qué es Git
 
