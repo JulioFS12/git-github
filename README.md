@@ -242,14 +242,20 @@ Eliminar archivos o regresarlos a Untracked
 	- git rm --cached: Mueve los archivos que le indiquemos al estado Untracked.
 	- git rm --force: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario 	  (pero debemos usar comandos más avanzados).
 ```
-![Status git](https://static.platzi.com/media/user_upload/estados-git-0acb84f7-5080-4098-99d9-59012a3b8e86.jpg)
-
-## GIT HEAD
-Saca un archivo del commit
-```ssh
-	git reset HEAD <archivo>
+Podemos volver a cualquier versión anterior de un archivo específico o incluso del proyecto entero. Esta también es la forma de crear ramas y movernos entre ellas.
+```ssh 
+git checkout + ID 
 ```
-Devuelve el ultimo commit que se hizo y pone los cambios en staging
+Borra toda la información que tengamos en el área de staging (y perdiendo todo para siempre)
+```ssh
+git reset <id> --hard
+```
+Mantiene allí los archivos del área de staging para que podamos aplicar nuestros últimos cambios pero desde un commit anterior.
+```ssh
+git reset <id> --soft
+```
+![rm and reset](https://static.platzi.com/media/user_upload/73119254_802372936847989_5797753898781376512_n-ebbdbd91-bb68-4ef7-acd5-a7715a20ac39.jpg)
+Devuelve el ultimo commit que se hizo y pone los cambios en el estado anterior.
 ```ssh
 	git reset --soft HEAD^
 ```
@@ -266,7 +272,7 @@ Rollback merge/commit
 	git log
 	git reset --hard <commit_sha>
 ```
-
+![Status git](https://static.platzi.com/media/user_upload/estados-git-0acb84f7-5080-4098-99d9-59012a3b8e86.jpg)
 
 
 
