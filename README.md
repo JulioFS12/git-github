@@ -219,11 +219,13 @@ Nos ayuda a sacar archivos del estado Staged para devolverlos a su estado anteri
 Nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedirá que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento -m para escribirlo (git commit -m "mensaje").
 ```ssh
 	git commit
+```
+Eliminar archivos o regresarlos a Untracked
+```ssh
 	git rm: este comando necesita alguno de los siguientes argumentos para poder ejecutarse correctamente:
 	- git rm --cached: Mueve los archivos que le indiquemos al estado Untracked.
 	- git rm --force: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario 	  (pero debemos usar comandos más avanzados).
 ```
-
 ![Status git](https://static.platzi.com/media/user_upload/estados-git-0acb84f7-5080-4098-99d9-59012a3b8e86.jpg)
 
 ## GIT HEAD
