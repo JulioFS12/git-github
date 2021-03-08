@@ -275,10 +275,90 @@ Rollback merge/commit
 ```
 ![Status git](https://static.platzi.com/media/user_upload/estados-git-0acb84f7-5080-4098-99d9-59012a3b8e86.jpg)
 
+## GIT REMOTE
 
+Agregar repositorio remoto
+```ssh
+	git remote add origin <url>
+```
+Cambiar de remote
+```ssh
+	git remote set-url origin <url>
+```
+Remover repositorio
+```ssh
+	git remote rm <name/origin>
+```
+Muestra lista repositorios
+```ssh
+	git remote -v
+```
+Muestra los branches remotos
+```ssh	
+	git remote show origin
+```
+Limpiar todos los branches eliminados
+```ssh
+	git remote prune origin 
+```
+## 
+Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta .git.
+```ssh
+	git clone url_del_servidor_remoto 
+```
+Luego de hacer git add y git commit debemos ejecutar este comando para mandar los cambios al servidor remoto.
+```ssh
+	git push
+```
+Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+```ssh
+	git fetch
+```
+También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+```ssh
+	git merge
+```
+Básicamente, git fetch y git merge al mismo tiempo.
+```
+git pull
+```
 
+## GIT BRANCH
 
+Crea un branch
+```ssh
+	git branch <nameBranch>
+```
+Lista los branches
+```ssh
+	git branch
+```
+Comando -d elimina el branch y lo une al master
+```ssh
+	git branch -d <nameBranch>
+```
+Elimina sin preguntar
+```ssh
+	git branch -D <nameBranch>
+```
+Cambiar entre ramas
+```
+	git checkout -b rama
+```
+## Crear un nuevo commit en la rama master combinando
 
+los cambios de la rama cabecera:
+```shh
+	git checkout master
+	git merge cabecera
+```
+# Crear un nuevo commit en la rama cabecera combinando
+
+los cambios de cualquier otra rama:
+```ssh
+	git checkout cabecera
+	git merge cualquier-otra-rama
+```
 
 
 
