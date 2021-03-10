@@ -461,13 +461,41 @@ Esta funcionalidad nos permite crear una llave publica y privada, esto nos permi
 	ssh-add -K ruta-donde-guardaste-tu-llave-privada
 ```
 
+## Conexion a Github con ssh
+Luego de crear nuestras llaves SSH podemos entregarle la llave pública a GitHub para comunicarnos de forma segura y sin necesidad de escribir nuestro usuario y contraseña todo el tiempo.
 
+Para esto debes entrar a la Configuración de Llaves SSH en GitHub, crear una nueva llave con el nombre que le quieras dar y el contenido de la llave pública de tu computadora.
 
+Ahora podemos actualizar la URL que guardamos en nuestro repositorio remoto, solo que, en vez de guardar la URL con HTTPS, vamos a usar la URL con SSH:
+```ssh
+git remote set-url origin url-ssh-del-repositorio-en-github
+```
 
+## Los tags o etiquetas nos permiten asignar versiones a los commits con cambios más importantes o significativos de nuestro proyecto.
 
+Comandos para trabajar con etiquetas:
 
+Crear un nuevo tag y asignarlo a un commit
+```ssh
+git tag -a nombre-del-tag id-del-commit
+```
+Borrar un tag en el repositorio local
+```ssh
+git tag -d nombre-del-tag
+```
+Listar los tags de nuestro repositorio local
+```ssh
+git tag o git show-ref --tags
+```
+Publicar un tag en el repositorio remoto
+```ssh
+git push origin --tags
+```
+Borrar un tag del repositorio remoto
+```ssh
+git tag -d nombre-del-tag y git push origin :refs/tags/nombre-del-tag.
+```
 
-
-
+### [More about tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
 
